@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+}
+#components-layout-demo-top .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+.ant-row-rtl #components-layout-demo-top .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+.ant-layout.layout{
+  min-height: 100vh;
+}
+.ant-layout-content{
+  flex-direction: column;
+
+}
+.site-layout-content{
+  flex-grow: 1;
+}
+
+.resize-handle {
+  display: block;
+  position: absolute;
+  cursor: col-resize;
+  width: 7px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+  border-right: 2px solid transparent;
+}
+
+.resize-handle:hover {
+  border-color: #ccc;
+}
+
+.resize-handle.active {
+  border-color: #517ea5;
+}
+.resize-container{
+  display: grid;
+}
+.resize-item{
+  overflow: hidden;
+  flex-grow: 1;
+  padding: 20px;
+   position: relative;
+}
+.leaflet-container {
+  width: 100%;
+  height: 500px;
+}
